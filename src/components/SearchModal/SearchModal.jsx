@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { SearchModalContext } from '../../provider/context-modal';
+import { SearchModalContext } from '../../Provider/context-modal';
 
 import {
   Overlay,
