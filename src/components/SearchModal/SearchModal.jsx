@@ -31,7 +31,7 @@ const SearchModal = () => {
     ) {
       alert('digite o código de rastreio');
     } else {
-      navigate('/search/' + codeTracking);
+      navigate('/busca/' + codeTracking);
       handleClose();
     }
   }
