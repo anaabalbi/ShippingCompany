@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, SearchIcon } from './style';
+import { Button, SearchIcon } from './style-button';
 import { SearchModalContext } from '../../provider/context-modal';
 import { useContext } from 'react';
 
