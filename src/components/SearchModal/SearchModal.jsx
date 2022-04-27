@@ -13,7 +13,7 @@ import {
   InputContainer,
   Footer,
   CheckIcon,
-} from './styleModal';
+} from './style-modal';
 
 const SearchModal = () => {
   const { handleClose, codeHandler, codeTracking } =
