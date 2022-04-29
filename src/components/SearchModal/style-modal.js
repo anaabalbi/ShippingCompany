@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { IoClose, IoCheckmark } from 'react-icons/io5';
+import { keyframes } from 'styled-components';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -11,6 +12,7 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5000;
 `;
 
 export const ModalContainer = styled.div`
@@ -87,6 +89,20 @@ export const InputContainer = styled.div`
     }
   }
 `;
+
+export const Alert = styled.div`
+  display: ${(props) => {
+    if (props.erro === 0) {
+      return 'flex';
+    } else {
+      return 'none';
+    }
+  }};
+  & > p {
+    font-size: 12px;
+  }
+`;
+
 export const Footer = styled.div`
   display: flex;
   justify-content: center;
