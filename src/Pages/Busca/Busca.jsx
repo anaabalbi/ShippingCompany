@@ -1,9 +1,10 @@
 import React from 'react';
+import PackageTracking from '../../components/PackageTracking/PackageTracking';
 
 const Busca = () => {
   return (
     <>
-      <h1>Busca</h1>
+      <PackageTracking></PackageTracking>
     </>
   );
 };
