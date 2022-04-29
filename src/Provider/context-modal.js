@@ -1,14 +1,14 @@
 import React, { createContext, useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 
 export const SearchModalContext = createContext();
 
 export const SearchModalProvider = (props) => {
   const [openSearchModal, setOpenSearchModal] = useState();
-  const [codeTracking, setCodeTracking] = useState();
-  // const navigate = useNavigate();
+  const [codeTracking, setCodeTracking] = useState('');
+  const [data, setData] = useState({});
   function handleOpen() {
     setOpenSearchModal(true);
+
     console.log(openSearchModal);
   }
 
@@ -18,21 +18,7 @@ export const SearchModalProvider = (props) => {
 
   function codeHandler(e) {
     setCodeTracking(e.target.value);
-    localStorage.setItem('codeTrackingStorage', e.target.value);
-    console.log(codeTracking);
   }
-
-  // function handleSubmit(e) {
-  //   e.preventDefault();
-
-  //   console.log(codeTracking);
-  //   if (codeTracking === '') {
-  //     alert('digite o código de rastreio');
-  //   } else {
-  //     navigate('/search' + codeTracking);
-  //     handleClose();
-  //   }
-  // }
 
   return (
     <SearchModalContext.Provider
@@ -43,6 +29,8 @@ export const SearchModalProvider = (props) => {
         codeTracking,
         setCodeTracking,
         codeHandler,
+        data,
+        setData,
       }}
     >
       {props.children}
