@@ -11,14 +11,16 @@ export function useApi(url) {
     axios
       .get(url)
       .then((response) => {
-        setData(response.data);
+        setData(response.data.address.address[0]);
         console.log(response.data);
       })
       .catch((err) => {
         setError(err);
       })
       .finally(() => {
-        setIsFetching(false);
+        setTimeout(() => {
+          setIsFetching(false);
+        }, 3000);
       });
   }, []);
 
