@@ -1,4 +1,5 @@
 import React from 'react';
+import Animation from './components/Animation/Animation.jsx';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Busca from './Pages/Busca/Busca.jsx';
