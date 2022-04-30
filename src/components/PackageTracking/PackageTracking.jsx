@@ -9,7 +9,6 @@ import Animation from '../Animation/Animation';
 
 const PackageTracking = () => {
   const { codeTracking } = useContext(SearchModalContext);
-  localStorage.setItem('codeTrackingStorage', codeTracking);
   const { data, isFetching } = useApi(
     `//transportadora-pedido.herokuapp.com/address/codetracking/${codeTracking}`
   );
@@ -17,12 +16,7 @@ const PackageTracking = () => {
   return (
     <SectionPackage>
       <BoxPackage>
-        {data.length < 1 ? (
-          <Shipping>
-            {' '}
-            <h3>Pedido não encontrado</h3>
-          </Shipping>
-        ) : isFetching ? (
+        {isFetching ? (
           <Animation></Animation>
         ) : (
           <Shipping
