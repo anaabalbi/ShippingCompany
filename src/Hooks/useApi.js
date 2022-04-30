@@ -12,6 +12,7 @@ export function useApi(url) {
       .get(url)
       .then((response) => {
         setData(response.data.address.address[0]);
+        console.log(data);
         console.log(response.data);
       })
       .catch((err) => {
