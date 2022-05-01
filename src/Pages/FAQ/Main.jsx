@@ -1,6 +1,6 @@
 import React from 'react';
 import { Div, Form, Inputs, InputText, Text, Texto, InputTextarea, Botao, Accordions } from './style';
-import Accordion from '../accordion/Accordion';
+import Accordion from '../../components/accordion/Accordion';
 
 const Main = () => {
     return (
