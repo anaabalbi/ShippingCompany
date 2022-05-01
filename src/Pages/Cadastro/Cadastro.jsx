@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Div, Form, Inputs, InputText, Texto, Botao } from './style';
 import { useNavigate } from "react-router-dom";
-import { cadastroForm } from '../../services/Api';
+import { cadastroForm } from '../../service/Api';
 
 const Cadastro = () => {
   const [value, setValue] = useState({});
