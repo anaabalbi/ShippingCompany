@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import './style-headerhome.css';
-import SearchModal from '../SearchModal/SearchModal';
-import { SearchModalContext } from '../../Provider/context-modal.js';
 import logo from '../../assets/logo/express.png';
 
 function HeaderHome() {
@@ -39,40 +36,19 @@ function HeaderHome() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link
-
-                to='/login'
-
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
                 LOGIN
               </Link>
             </li>
-            {/* <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                RASTREAMENTO
-              </Link>
-            </li> */}
             <li className='nav-item'>
-              <Link
-                to='/PAGINA DA ANA'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/faq' className='nav-links' onClick={closeMobileMenu}>
                 FAQ
               </Link>
             </li>
 
             <li>
               <Link
-
                 to='/Cadastro'
-
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
