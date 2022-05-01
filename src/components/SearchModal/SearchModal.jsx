@@ -48,12 +48,16 @@ const SearchModal = () => {
           <InputContainer>
             <label>Código de Rastreio</label>
             <input
-              type='type'
+              type='text'
               placeholder='Insira o código de rastreio do pedido'
               onChange={codeHandler}
             />
             <Alert erro={alert}>
-              <p> Entre com o código de rastreio, ele contém 7 digitos</p>
+              <p>
+                {' '}
+                Entre com o código de rastreio, ele é composto por 7 digitos
+                numericos{' '}
+              </p>
             </Alert>
           </InputContainer>
         </FormContainer>
