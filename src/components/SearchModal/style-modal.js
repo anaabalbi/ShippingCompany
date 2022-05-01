@@ -19,7 +19,9 @@ export const ModalContainer = styled.div`
   width: 100%;
   height: 100%;
   max-width: 300px;
+
   max-height: 230px;
+
 
   display: flex;
   flex-direction: column;
@@ -73,7 +75,9 @@ export const InputContainer = styled.div`
   flex-direction: column;
   gap: 5px;
   & > label {
+
     font-size: 16px;
+
   }
   & > input {
     border: none;
@@ -100,7 +104,9 @@ export const Alert = styled.div`
   }};
   & > p {
     font-size: 12px;
+
     color: #fa680c;
+
   }
 `;
 
