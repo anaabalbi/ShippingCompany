@@ -22,3 +22,34 @@ export const BoxPackage = styled.ul`
   list-style: none;
   padding: 0;
 `;
+
+
+export const ButtonReturn = styled.div`
+  width: 600px;
+  height: 200px;
+  display: flex;
+  flex-diretion: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  & > strong {
+    color: #fa680c;
+    font-size: 25px;
+  }
+  & > a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border-bottom: 4px solid #fa680c;
+    }
+  }
+`;
+

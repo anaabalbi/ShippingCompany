@@ -105,11 +105,17 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+
+    display: flex;
+    justify-content: flex-start;
+
   }
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+
+    padding: 15px;
+
     width: 100%;
     display: table;
   }
@@ -145,11 +151,13 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-    margin: 2rem auto;
+
+    margin: 7px auto;
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 15px;
+
     background-color: transparent;
     color: #fff;
     padding: 14px 20px;
