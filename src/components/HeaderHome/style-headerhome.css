@@ -105,9 +105,9 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-
     display: flex;
     justify-content: flex-start;
+
 
   }
 
@@ -115,6 +115,7 @@
     text-align: center;
 
     padding: 15px;
+
 
     width: 100%;
     display: table;
@@ -151,13 +152,11 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-
     margin: 7px auto;
     border-radius: 4px;
     width: 80%;
     text-decoration: none;
     font-size: 15px;
-
     background-color: transparent;
     color: #fff;
     padding: 14px 20px;

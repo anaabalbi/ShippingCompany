@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
-
 import {
   BoxPackage,
   SectionPackage,
   ButtonReturn,
 } from './stylePackageTracking';
 import { Link } from 'react-router-dom';
-
 import Shipping from '../ShippingCard/Shipping';
 // import { SearchModalContext } from '../../Provider/context-modal';
 // import { UrlGetCode } from '../../service/Api';
@@ -16,9 +14,7 @@ import Animation from '../Animation/Animation';
 
 const PackageTracking = () => {
   const { codeTracking } = useContext(SearchModalContext);
-
   const { data, isFetching, error } = useApi(
-
     `//transportadora-pedido.herokuapp.com/address/codetracking/${codeTracking}`
   );
 
@@ -27,9 +23,7 @@ const PackageTracking = () => {
       <BoxPackage>
         {isFetching ? (
           <Animation></Animation>
-
         ) : data != undefined ? (
-
           <Shipping
             codeTracking={data.CODE_TRACKING}
             senderState={data.SENDER_STATE}
@@ -39,13 +33,11 @@ const PackageTracking = () => {
             dateCreate={data.DATE_ORDERED}
             status={data.STATUS}
           />
-
         ) : (
           <ButtonReturn>
             <strong>PEDIDO NÃO ENCONTRADO</strong>
             <Link to={'/'}>Voltar para página inicial</Link>
           </ButtonReturn>
-
         )}
       </BoxPackage>
     </SectionPackage>

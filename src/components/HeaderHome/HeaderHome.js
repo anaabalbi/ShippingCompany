@@ -40,7 +40,9 @@ function HeaderHome() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link
-                to='/PAGINA ANDERSON'
+
+                to='/login'
+
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -68,7 +70,9 @@ function HeaderHome() {
 
             <li>
               <Link
+
                 to='/Cadastro'
+
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
