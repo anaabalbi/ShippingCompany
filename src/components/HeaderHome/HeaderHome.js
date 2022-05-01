@@ -29,7 +29,9 @@ function HeaderHome() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <div className='navbar-logo'>
-            <img className='navbar-logo' src={logo} alt='logo' />
+            <Link to='/'>
+              <img className='navbar-logo' src={logo} alt='logo' />
+            </Link>
           </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
