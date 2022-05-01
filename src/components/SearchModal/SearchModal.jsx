@@ -48,6 +48,7 @@ const SearchModal = () => {
           <InputContainer>
             <label>Código de Rastreio</label>
             <input
+
               type='text'
               placeholder='Insira o código de rastreio do pedido'
               onChange={codeHandler}

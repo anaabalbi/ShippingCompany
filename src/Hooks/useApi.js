@@ -22,7 +22,12 @@ export function useApi(url) {
           setIsFetching(false);
         }, 3000);
       });
-  }, [data]);
+
+
+  }, []);
+
+
+
 
   return { data, error, isFetching };
 }

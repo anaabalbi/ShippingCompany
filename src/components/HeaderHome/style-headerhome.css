@@ -107,11 +107,16 @@
     z-index: 1;
     display: flex;
     justify-content: flex-start;
+
+
   }
 
   .nav-links {
     text-align: center;
+
     padding: 15px;
+
+
     width: 100%;
     display: table;
   }

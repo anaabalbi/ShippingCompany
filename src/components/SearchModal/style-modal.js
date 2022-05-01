@@ -20,12 +20,10 @@ export const ModalContainer = styled.div`
   height: 100%;
   max-width: 300px;
   max-height: 230px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
   background-color: #f2f2f2;
   border-radius: 20px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
