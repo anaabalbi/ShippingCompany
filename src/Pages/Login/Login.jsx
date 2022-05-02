@@ -11,6 +11,8 @@ import {
 import { Link, useNavigate } from 'react-router-dom';
 import { cadastroForm } from '../../service/Api';
 import { ContextUser } from '../../Provider/ContextUser';
+import HeaderHome from '../../components/HeaderHome/HeaderHome.js';
+import Footer from '../../components/Footer/Footer.js';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -30,30 +32,34 @@ const Login = () => {
   }
 
   return (
-    <Div>
-      <Form onSubmit={(e) => login(e)}>
-        <Texto>Entre em sua conta</Texto>
-        <Inputs>
-          <InputText
-            type='email'
-            onChange={handleOnChange}
-            placeholder='E-mail'
-            name='EMAIL'
-          />
-          <InputText
-            type='password'
-            onChange={handleOnChange}
-            placeholder='Senha'
-            name='SENHA'
-          />
-          <Botao type='submit'>Entrar</Botao>
+    <>
+      <HeaderHome></HeaderHome>
+      <Div>
+        <Form onSubmit={(e) => login(e)}>
+          <Texto>Entre em sua conta</Texto>
+          <Inputs>
+            <InputText
+              type='email'
+              onChange={handleOnChange}
+              placeholder='E-mail'
+              name='EMAIL'
+            />
+            <InputText
+              type='password'
+              onChange={handleOnChange}
+              placeholder='Senha'
+              name='SENHA'
+            />
+            <Botao type='submit'>Entrar</Botao>
 
-          <Link to='/cadastro' style={{ textDecoration: 'none' }}>
-            <CriarConta>Crie sua Conta</CriarConta>
-          </Link>
-        </Inputs>
-      </Form>
-    </Div>
+            <Link to='/cadastro' style={{ textDecoration: 'none' }}>
+              <CriarConta>Crie sua Conta</CriarConta>
+            </Link>
+          </Inputs>
+        </Form>
+      </Div>
+      <Footer></Footer>
+    </>
   );
 };
 
