@@ -19,7 +19,7 @@ Para rodar nosso projeto é necessário que você tenha instalado na sua máquin
 
 ---
 
-## 🏍️ Testando a o código de rastreamento
+## 🏍️ Testando o código de rastreamento
 
 - Para testar a página de código de rastreamento, digite o seguinte código:
 
