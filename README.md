@@ -19,14 +19,20 @@ Para rodar nosso projeto é necessário que você tenha instalado na sua máquin
 
 ---
 
+## Testando a o código de rastreamento 🏍️
+
+- Para testar a página de código de rastreamento, digite o seguinte código:
+
+---
+
 ## 🧭 Rodando a aplicação
 
 ```bash
 # Clone o repositório
-$ git clone <https://github.com/anaabalbi/ExpressJSCompany>
+$ git clone <https://github.com/anaabalbi/ShippingCompany>
 
 # Acesse a pasta do projeto no terminal
-$ cd ExpressJSCompany
+$ cd ShippingCompany
 
 # Instale as dependências
 $ npm install
