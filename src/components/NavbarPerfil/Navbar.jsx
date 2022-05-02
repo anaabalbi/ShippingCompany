@@ -1,26 +1,26 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
-import "./Navbar.scss";
-import Logo from "../../imgs/logo.png";
+import React, { useEffect, useState, useRef } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import './Navbar.scss';
+import Logo from '../../assets/logo/express.png';
 
 function Navbar() {
   const { id } = useParams();
   const NavbarItens = [
     {
-      display: "Dashboard",
-      icon: <i class="bx bx-home"></i>,
+      display: 'Dashboard',
+      icon: <i class='bx bx-home'></i>,
       to: `/perfil/${id}`,
-      section: "/perfil",
+      section: '/perfil',
     },
     {
-      display: "Pedidos",
-      icon: <i class="bx bx-receipt"></i>,
+      display: 'Pedidos',
+      icon: <i class='bx bx-receipt'></i>,
       to: `/perfil/${id}/pedidos`,
       section: `/pedidos`,
     },
     {
-      display: "Ajuda",
-      icon: <i class="bx bx-help-circle"></i>,
+      display: 'Ajuda',
+      icon: <i class='bx bx-help-circle'></i>,
       to: `/perfil/${id}/ajuda`,
       section: `/ajuda`,
     },
@@ -35,7 +35,7 @@ function Navbar() {
   useEffect(() => {
     setTimeout(() => {
       const sidebarItem =
-        sidebarRef.current.querySelector(".Navbar_menu_itens");
+        sidebarRef.current.querySelector('.Navbar_menu_itens');
       indicatorRef.current.style.height = `${sidebarItem.clientHeight}px`;
       setStepHeight(sidebarItem.clientHeight);
     }, 50);
@@ -50,14 +50,14 @@ function Navbar() {
   }, [location]);
 
   return (
-    <div className="Navbar">
-      <div className="Navbar_logo">
-        <img src={Logo} width="80px" />
+    <div className='Navbar'>
+      <div className='Navbar_logo'>
+        <img src={Logo} width='80px' />
       </div>
-      <div ref={sidebarRef} className="Navbar_menu">
+      <div ref={sidebarRef} className='Navbar_menu'>
         <div
           ref={indicatorRef}
-          className="Navbar_menu_indicator"
+          className='Navbar_menu_indicator'
           style={{
             transform: `translateX(-50%) translateY(${
               activeIndex * stepHeight
@@ -68,11 +68,11 @@ function Navbar() {
           <Link to={item.to} key={index}>
             <div
               className={`Navbar_menu_itens ${
-                activeIndex === index ? "active" : ""
+                activeIndex === index ? 'active' : ''
               }`}
             >
-              <div className="Navbar_menu_itens_icon">{item.icon}</div>
-              <div className="Navbar_menu_itens_text">{item.display}</div>
+              <div className='Navbar_menu_itens_icon'>{item.icon}</div>
+              <div className='Navbar_menu_itens_text'>{item.display}</div>
             </div>
           </Link>
         ))}
