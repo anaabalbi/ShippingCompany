@@ -32,7 +32,7 @@ function Cards() {
             <CardItem
               src="images/rastreio.jpg"
               text=" Aproveite nosso amplo serviço de rastreamento e acompanhe o seu pedido até chegar ao seu destino."
-              label="Aprobeite nosso amplo serviço de rastreio"
+              label="Aproveite nosso amplo serviço de rastreio"
               path="/products" //linkar pag Ana Rastreamento
             />
             <CardItem
