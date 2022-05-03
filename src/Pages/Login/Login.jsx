@@ -1,8 +1,16 @@
 import React, { useContext } from "react";
-import { Div, Form, Inputs, InputText, Texto, Botao, CriarConta } from "./style.js";
+import {
+  Div,
+  Form,
+  Inputs,
+  InputText,
+  Texto,
+  Botao,
+  CriarConta,
+} from "./style.js";
 import { Link, useNavigate } from "react-router-dom";
 import { cadastroForm } from "../../service/Api";
-import { ContextUser } from "../../Providers/ContextUser.js";
+import { ContextUser } from "../../Provider/ContextUser.js";
 
 const Login = () => {
   const navigate = useNavigate();
