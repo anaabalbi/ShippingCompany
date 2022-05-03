@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { cadastroForm } from '../../service/Api';
 import {
   Container,
@@ -72,7 +72,9 @@ function Dashboard() {
         </Inputs>
 
         <Buttons>
-          <Button onClick={handleUpdate}>Atualizar dados</Button>
+          <Link to='/perfil/:id/ajuda'>
+            <Button>Atualizar dados</Button>
+          </Link>
           <Button onClick={handleDelete}>Deletar conta</Button>
         </Buttons>
       </Container>
