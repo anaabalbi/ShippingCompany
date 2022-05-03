@@ -80,7 +80,7 @@ export const InputContainer = styled.div`
     border-radius: 5px;
     height: 30px;
     width: 100%;
-
+    padding-left: 5px;
     transition: 0.2s;
     &:hover {
       background-color: #f2f2f2;
