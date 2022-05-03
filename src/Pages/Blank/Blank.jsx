@@ -1,5 +1,5 @@
 function Blank() {
-  return <div>Aqui não tem nada :c</div>;
+  return;
 }
 
 export default Blank;
