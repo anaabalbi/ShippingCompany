@@ -63,7 +63,7 @@ function Ajuda() {
           <h3>Atualize suas informações</h3>
           <Input
             type='text'
-            name='nome_completo'
+            name='NOME_COMPLETO'
             onChange={handleOnChange}
             placeholder={dataUser.usuario.NOME_COMPLETO}
           />
