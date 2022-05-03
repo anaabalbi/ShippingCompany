@@ -41,32 +41,32 @@ function Dashboard() {
           <h3>Informações Pessoais</h3>
           <Input
             type='text'
-            name='nome_completo'
+            name='NOME_COMPLETO'
             onChange={handleOnChange}
-            placeholder={dataUser.usuario.NOME_COMPLETO}
+            value={dataUser.usuario.NOME_COMPLETO}
           />
           <Input
             type='email'
             name='EMAIL'
-            placeholder={dataUser.usuario.EMAIL}
+            value={dataUser.usuario.EMAIL}
             onChange={handleOnChange}
           />
           <Input
             type='text'
             name='CPF'
-            placeholder={dataUser.usuario.CPF}
+            value={dataUser.usuario.CPF}
             onChange={handleOnChange}
           />
           <Input
             type='tel'
             name='TELEFONE'
-            placeholder={dataUser.usuario.TELEFONE}
+            value={dataUser.usuario.TELEFONE}
             onChange={handleOnChange}
           />
           <Input
             type='password'
             name='SENHA'
-            placeholder={dataUser.usuario.SENHA}
+            value={dataUser.usuario.SENHA}
             onChange={handleOnChange}
           />
         </Inputs>
