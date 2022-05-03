@@ -19,8 +19,8 @@ function Navbar() {
       section: `/pedidos`,
     },
     {
-      display: 'Ajuda',
-      icon: <i class='bx bx-help-circle'></i>,
+      display: 'Configuração',
+      icon: <i class='bx bx-cog'></i>,
       to: `/perfil/${id}/ajuda`,
       section: `/ajuda`,
     },
