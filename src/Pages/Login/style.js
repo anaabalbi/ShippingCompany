@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Div = styled.main`
   height: 100vh;
@@ -24,7 +24,7 @@ export const Texto = styled.h1`
   font-size: 34px;
   margin-top: 20px;
   color: black;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
 `;
 
@@ -45,6 +45,7 @@ export const InputText = styled.input`
   border-radius: 3px;
   border-style: none;
   border: solid 1px white;
+  padding-left: 5px;
 `;
 
 export const Botao = styled.button`
@@ -61,5 +62,5 @@ export const CriarConta = styled.p`
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 `;
