@@ -21,8 +21,8 @@ Para rodar nosso projeto é necessário que você tenha instalado na sua máquin
 
 ## 🏍️ Testando o código de rastreamento
 
-- Para testar a página de código de rastreamento, digite o seguinte código:
-
+- Para testar a página de código de rastreamento, digite os seguintes códigos:
+1062753, ou 3256787, ou 2345678.
 ---
 
 ## 🧭 Rodando a aplicação
