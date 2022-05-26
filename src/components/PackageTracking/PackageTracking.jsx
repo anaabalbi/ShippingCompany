@@ -23,15 +23,15 @@ const PackageTracking = () => {
       <BoxPackage>
         {isFetching ? (
           <Animation></Animation>
-        ) : data != undefined ? (
+        ) : error.erro != true ? (
           <Shipping
-            codeTracking={data.CODE_TRACKING}
-            senderState={data.SENDER_STATE}
-            senderCountry={data.SENDER_COUNTRY}
-            addresseeState={data.ADDRESSEE_STATE}
-            addresseeCountry={data.ADDRESSEE_COUNTRY}
-            dateCreate={data.DATE_ORDERED}
-            status={data.STATUS}
+            codeTracking={data[0].CODE_TRACKING}
+            senderState={data[0].SENDER_STATE}
+            senderCountry={data[0].SENDER_COUNTRY}
+            addresseeState={data[0].ADDRESSEE_STATE}
+            addresseeCountry={data[0].ADDRESSEE_COUNTRY}
+            dateCreate={data[0].DATE_ORDERED}
+            status={data[0].STATUS}
           />
         ) : (
           <ButtonReturn>

@@ -11,23 +11,20 @@ export function useApi(url) {
     axios
       .get(url)
       .then((response) => {
-        setData(response.data.address.address[0]);
-        console.log(response.data);
+        setData(response.data.address);
+        setError(response.data.erro);
+        console.log(response.data.erro);
       })
       .catch((err) => {
-        setError(err);
+        setError(err.response.data);
+        console.log(err.response.data);
       })
       .finally(() => {
         setTimeout(() => {
           setIsFetching(false);
         }, 3000);
       });
-
-
   }, []);
-
-
-
 
   return { data, error, isFetching };
 }
